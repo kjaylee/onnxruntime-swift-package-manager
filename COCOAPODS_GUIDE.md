@@ -92,9 +92,11 @@ ORTSession *session = [[ORTSession alloc] initWithEnv:env
 
 1. **Missing C API Headers**: If you encounter errors about missing `onnxruntime_c_api.h`, ensure you have properly added the ONNX Runtime binary framework to your project.
 
-2. **Linking Errors**: Make sure the ONNX Runtime framework is properly linked in your project's "Frameworks, Libraries, and Embedded Content" section.
+2. **Missing cxx_api.h**: If you encounter errors about missing `cxx_api.h`, make sure you're using the latest version of the podspec which includes this header file in the public headers.
 
-3. **Architecture Mismatch**: Ensure the ONNX Runtime framework architecture matches your target device/simulator architecture.
+3. **Linking Errors**: Make sure the ONNX Runtime framework is properly linked in your project's "Frameworks, Libraries, and Embedded Content" section.
+
+4. **Architecture Mismatch**: Ensure the ONNX Runtime framework architecture matches your target device/simulator architecture.
 
 ### Getting Help
 

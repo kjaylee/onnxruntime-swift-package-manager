@@ -30,7 +30,8 @@ Pod::Spec.new do |spec|
     "objectivec/include/ort_enums.h",
     "objectivec/include/ort_custom_op_registration.h",
     "objectivec/include/ort_coreml_execution_provider.h",
-    "objectivec/include/ort_xnnpack_execution_provider.h"
+    "objectivec/include/ort_xnnpack_execution_provider.h",
+    "objectivec/cxx_api.h"
   ]
 
   spec.exclude_files = [
@@ -45,7 +46,6 @@ Pod::Spec.new do |spec|
     "objectivec/include/ort_checkpoint.h",
     "objectivec/include/ort_training_session.h",
     "objectivec/include/onnxruntime_training.h",
-    "objectivec/cxx_api.h",
     "objectivec/cxx_utils.mm"
   ]
 

@@ -19,12 +19,16 @@ Pod::Spec.new do |spec|
   # Extensions source files
   spec.source_files = [
     "extensions/*.{h,mm}",
-    "extensions/include/*.h"
+    "extensions/include/*.h",
+    "objectivec/*.{h,mm}",
+    "objectivec/include/*.h"
   ]
   
   spec.public_header_files = [
     "extensions/include/OnnxRuntimeExtensions.h",
-    "extensions/include/OrtExt.h"
+    "extensions/include/OrtExt.h",
+    "objectivec/include/onnxruntime.h",
+    "objectivec/cxx_api.h"
   ]
 
   spec.requires_arc = true
