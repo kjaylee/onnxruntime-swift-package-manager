@@ -1,13 +1,62 @@
 # Swift Package Manager for ONNX Runtime
 
-A light-weight repository for providing [Swift Package Manager (SPM)](https://www.swift.org/package-manager/) support for [ONNXRuntime](https://github.com/microsoft/onnxruntime). The ONNX Runtime native package is included as a binary dependency of the SPM package.
+A light-weight repository for providing [Swift Package Manager (SPM)](https://www.swift.org/package-manager/) and [CocoaPods](https://cocoapods.org/) support for [ONNXRuntime](https://github.com/kjaylee/onnxruntime). The ONNX Runtime native package is included as a binary dependency.
 
+## Installation
+
+### Swift Package Manager
 
 SPM is the alternative to CocoaPods when desired platform to consume is mobile iOS.
 
+Add the following dependency to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/kjaylee/onnxruntime-swift-package-manager", from: "1.20.0")
+]
+```
+
+### CocoaPods
+
+Add the following to your `Podfile`:
+
+```ruby
+# For ONNX Runtime core functionality
+pod 'onnxruntime', :git => 'https://github.com/kjaylee/onnxruntime-swift-package-manager.git', :tag => '1.20.0'
+
+# For ONNX Runtime Extensions (optional)
+pod 'onnxruntime-extensions', :git => 'https://github.com/kjaylee/onnxruntime-swift-package-manager.git', :tag => '0.13.0'
+```
+
+Then run:
+
+```bash
+pod install
+```
+
+**Important**: CocoaPods integration requires manual binary dependency management. See [CocoaPods Installation Guide](COCOAPODS_GUIDE.md) for detailed instructions.
+
+## Usage
+
+### Swift
+
+```swift
+import onnxruntime
+
+// Your ONNX Runtime code here
+```
+
+### Objective-C
+
+```objc
+#import <onnxruntime/onnxruntime.h>
+
+// Your ONNX Runtime code here
+```
+
 ## Note
 
-The `objectivec/` directory is copied from the [ORT repo](https://github.com/microsoft/onnxruntime/tree/main/objectivec) and it's expected to match. It will be updated periodically/before release to merge new changes.
+The `objectivec/` directory is copied from the [ORT repo](https://github.com/kjaylee/onnxruntime/tree/main/objectivec) and it's expected to match. It will be updated periodically/before release to merge new changes.
 
 ## Contributing
 

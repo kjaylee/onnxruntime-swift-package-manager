@@ -9,12 +9,12 @@
 // For example, the end user's config will look something like:
 //
 //     dependencies: [
-//       .package(url: "https://github.com/microsoft/onnxruntime-swift-package-manager", from: "1.16.0"), 
+//       .package(url: "https://github.com/kjaylee/onnxruntime-swift-package-manager", from: "1.16.0"), 
 //       ...
 //     ],
 //
 // NOTE: For valid version numbers, please refer to this page:
-// https://github.com/microsoft/onnxruntime-swift-package-manager/releases
+// https://github.com/kjaylee/onnxruntime-swift-package-manager/releases
 
 import PackageDescription
 import class Foundation.ProcessInfo

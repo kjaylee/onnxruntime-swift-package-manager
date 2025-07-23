@@ -23,9 +23,9 @@ cp -r <onnxruntime repo>/objectivec <onnxruntime-swift-package-manager repo>/obj
 
 Find the onnxruntime and onnxruntime-extensions binary target configuration in the Package.swift file. For example:
 
-https://github.com/microsoft/onnxruntime-swift-package-manager/blob/bbc428e168a0374eb7d0503cdb7c73fdc1d99751/Package.swift#L98-L104
+https://github.com/kjaylee/onnxruntime-swift-package-manager/blob/bbc428e168a0374eb7d0503cdb7c73fdc1d99751/Package.swift#L98-L104
 
-https://github.com/microsoft/onnxruntime-swift-package-manager/blob/bbc428e168a0374eb7d0503cdb7c73fdc1d99751/Package.swift#L110-L116
+https://github.com/kjaylee/onnxruntime-swift-package-manager/blob/bbc428e168a0374eb7d0503cdb7c73fdc1d99751/Package.swift#L110-L116
 
 ```swift
     // ORT release

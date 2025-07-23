@@ -17,7 +17,7 @@
     - script: |
         mkdir tmp
         cd tmp
-        git clone -n --depth=1 --filter=tree:0 https://github.com/microsoft/onnxruntime.git
+        git clone -n --depth=1 --filter=tree:0 https://github.com/kjaylee/onnxruntime.git
         cd onnxruntime
         git sparse-checkout set --no-cone objectivec
         git checkout

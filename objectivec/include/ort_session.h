@@ -178,7 +178,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Sets a session configuration key-value pair.
  * Any value for a previously set key will be overwritten.
  * The session configuration keys and values are documented here:
- * https://github.com/microsoft/onnxruntime/blob/main/include/onnxruntime/core/session/onnxruntime_session_options_config_keys.h
+ * https://github.com/kjaylee/onnxruntime/blob/main/include/onnxruntime/core/session/onnxruntime_session_options_config_keys.h
  *
  * @param key The key.
  * @param value The value.
@@ -200,10 +200,10 @@ NS_ASSUME_NONNULL_BEGIN
  *    `OrtStatus* (*fn)(OrtSessionOptions* options, const OrtApiBase* api);`
  *
  * The signature is defined in the ONNX Runtime C API:
- * https://github.com/microsoft/onnxruntime/blob/67f4cd54fab321d83e4a75a40efeee95a6a17079/include/onnxruntime/core/session/onnxruntime_c_api.h#L697
+ * https://github.com/kjaylee/onnxruntime/blob/67f4cd54fab321d83e4a75a40efeee95a6a17079/include/onnxruntime/core/session/onnxruntime_c_api.h#L697
  *
  * See https://onnxruntime.ai/docs/reference/operators/add-custom-op.html for more information on custom ops.
- * See https://github.com/microsoft/onnxruntime/blob/342a5bf2b756d1a1fc6fdc582cfeac15182632fe/onnxruntime/test/testdata/custom_op_library/custom_op_library.cc#L115
+ * See https://github.com/kjaylee/onnxruntime/blob/342a5bf2b756d1a1fc6fdc582cfeac15182632fe/onnxruntime/test/testdata/custom_op_library/custom_op_library.cc#L115
  * for an example of a custom op library registration function.
  *
  * @note The caller must ensure that `registrationFuncName` names a valid function that is visible to the native ONNX
@@ -227,10 +227,10 @@ NS_ASSUME_NONNULL_BEGIN
  *    `OrtStatus* (*fn)(OrtSessionOptions* options, const OrtApiBase* api);`
  *
  * The signature is defined in the ONNX Runtime C API:
- * https://github.com/microsoft/onnxruntime/blob/67f4cd54fab321d83e4a75a40efeee95a6a17079/include/onnxruntime/core/session/onnxruntime_c_api.h#L697
+ * https://github.com/kjaylee/onnxruntime/blob/67f4cd54fab321d83e4a75a40efeee95a6a17079/include/onnxruntime/core/session/onnxruntime_c_api.h#L697
  *
  * See https://onnxruntime.ai/docs/reference/operators/add-custom-op.html for more information on custom ops.
- * See https://github.com/microsoft/onnxruntime/blob/342a5bf2b756d1a1fc6fdc582cfeac15182632fe/onnxruntime/test/testdata/custom_op_library/custom_op_library.cc#L115
+ * See https://github.com/kjaylee/onnxruntime/blob/342a5bf2b756d1a1fc6fdc582cfeac15182632fe/onnxruntime/test/testdata/custom_op_library/custom_op_library.cc#L115
  * for an example of a custom op library registration function.
  *
  * @note The caller must ensure that `registerCustomOpsFn` is a valid function pointer and has the correct signature.
@@ -298,7 +298,7 @@ NS_ASSUME_NONNULL_BEGIN
  * Sets a run configuration key-value pair.
  * Any value for a previously set key will be overwritten.
  * The run configuration keys and values are documented here:
- * https://github.com/microsoft/onnxruntime/blob/main/include/onnxruntime/core/session/onnxruntime_run_options_config_keys.h
+ * https://github.com/kjaylee/onnxruntime/blob/main/include/onnxruntime/core/session/onnxruntime_run_options_config_keys.h
  *
  * @param key The key.
  * @param value The value.

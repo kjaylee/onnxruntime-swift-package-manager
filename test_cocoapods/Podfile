@@ -1,0 +1,11 @@
+# Test Podfile for ONNX Runtime CocoaPods integration
+
+platform :ios, '13.0'
+
+target 'TestApp' do
+  use_frameworks!
+
+  # Local podspec testing
+  pod 'onnxruntime', :path => '../'
+  pod 'onnxruntime-extensions', :path => '../'
+end

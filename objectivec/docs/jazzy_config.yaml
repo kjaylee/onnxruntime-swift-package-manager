@@ -1,7 +1,7 @@
 module: ONNX Runtime Objective-C API
 author: ONNX Runtime Authors
 author_url: https://www.onnxruntime.ai
-github_url: https://github.com/microsoft/onnxruntime
+github_url: https://github.com/kjaylee/onnxruntime
 
 objc: true
 # Specify the training header as umbrella_header so that every public header is included.

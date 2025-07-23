@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  3. Optimizer onnx model
  *  4. Checkpoint directory
  *
- * [onnxruntime-training python utility](https://github.com/microsoft/onnxruntime/blob/main/orttraining/orttraining/python/training/onnxblock/README.md)
+ * [onnxruntime-training python utility](https://github.com/kjaylee/onnxruntime/blob/main/orttraining/orttraining/python/training/onnxblock/README.md)
  * can be used to generate above training artifacts.
  *
  * Available since 1.16.
